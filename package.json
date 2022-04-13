@@ -1,7 +1,7 @@
 {
-  "name": "elesystem",
+  "name": "yushite",
   "version": "0.0.1",
-  "description": "Pixel game about interactions and stuff",
+  "description": "Pixel game about elements, interactions and stuff",
   "main": "index.js",
   "scripts": {
     "test": "echo \"wala po :(\"",
