@@ -1,0 +1,39 @@
+{
+  "name": "elesystem",
+  "version": "0.0.1",
+  "description": "Pixel game about interactions and stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"wala po :(\"",
+    "publish": "npm run build",
+
+    "build": "npm run build:webpack && npm run build:electron",
+    "build:webpack": "webpack --config webpack.config.js",
+
+    "watch": "npm-run-all --parallel watch:webpack watch:server",
+	
+    "watch:webpack": "webpack --config webpack.config.js --watch",
+    "watch:server": "nodemon \"./dist/bundle.js\" --exec \"electron .\" --watch"
+  },
+  "keywords": [
+    "game"
+  ],
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "electron": "^18.0.3",
+    "electron-packager": "^15.4.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.11",
+    "sass-loader": "^12.6.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "style-loader": "^3.3.1"
+  },
+  "author": "eclips_e#0001 (Just-a-Unity-Dev)",
+  "license": "MIT"
+}
