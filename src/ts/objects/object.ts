@@ -1,6 +1,6 @@
 import { Transform, ObjectType, Vector, Vector2, Color } from "../types";
 
-export class GameObject {
+export default class GameObject {
 	constructor (
 		public transform: Transform,
 		public objType: ObjectType,
@@ -26,6 +26,7 @@ export class Sand extends GameObject {
 	public color: Color = Color.yellowish_gray;
 	public callback(tick: number, objects: GameObject[]): void {
 		this.transform.position.y--;
+		console.log(tick)
 	}
 }
 
